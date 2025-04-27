@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    border: 1px solid black;
+    width: 350px;
+    margin: 0 auto;
+    background-image: url(../img/pulkovo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #ffffff;
+    padding: 20px;
+}
+
+.form-title{
+    margin-bottom: 10px;
+}
+
+.form-wrapper {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+}
+
+.form-wrapper::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0.5;
+    background: #000000;
+    z-index: -1;
+    border-radius: 10px;
+}
+
+.form-trip {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.input {
+    width: 100%;
+    margin-bottom: 10px;
+    line-height: 28px;
+}
+
+#round-trip{
+    width: 20px;
+    height: 20px;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.find-btn {
+    width: 100%;
+    padding: 8px;
+    background-color: red;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5;
+}
+
+.find-btn:hover{
+    background-color: rgb(224, 14, 14);
+    outline: 1px solid #ffffff;
+}
+
+.from-block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.date-block-twoway{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.date-wrapper{
+    width: 50%;
+}
+
+.date-block-hidden{
+    display: none;
+}
